@@ -1,0 +1,102 @@
+.tiptap:focus-visible, .tiptap:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Prevent images from exceeding the editor width */
+.tiptap img {
+  max-width: 100%;  /* Ensure the image doesn't exceed the editor's width */
+  height: auto;     /* Maintain the aspect ratio */
+  display: block;   /* Prevent image from affecting the layout */
+  margin: 10px 0;   /* Add spacing around the image */
+}
+
+.tiptap img:hover {
+  outline: 3px solid #22c55e;  /* Add a green border when hovering */
+}
+
+/* Blockquote styling */
+.tiptap-blockquote, .tiptap blockquote {
+  border-left: 4px solid #22c55e;
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: italic;
+  color: #4b5563;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  
+}
+
+/* Code block styling */
+.tiptap-code-block, .tiptap pre {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  font-family: monospace;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+/* Inline code styling */
+.tiptap code {
+  
+  color: #ffffff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  font-size: 0.75em;
+}
+
+/* Heading styles */
+.tiptap-heading-1, .tiptap h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.tiptap-heading-2, .tiptap h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+/* List styling */
+.tiptap-bullet-list, .tiptap ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tiptap-ordered-list, .tiptap ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Link styling */
+.tiptap-link, .tiptap a {
+  color: #000000;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.tiptap-link:hover, .tiptap a:hover {
+  color: #000000;
+}
+
+/* Paragraph styling */
+.tiptap-paragraph, .tiptap p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
