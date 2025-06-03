@@ -5,8 +5,8 @@ export async function middleware(req: NextRequest) {
     const token = await getToken({ req });
     const protectedRoutes = [
         "/write",
-        "/profile"
-    
+        "/profile",
+        "/settings"
     ]; //Add Protected routes here
 
     if (protectedRoutes.includes(req.nextUrl.pathname) && !token) {
@@ -21,6 +21,7 @@ export async function middleware(req: NextRequest) {
 export const config = {
     matcher: [
         "/write",
-        "/profile"
+        "/profile",
+        "/settings"
     ], // Adjust as needed
 };

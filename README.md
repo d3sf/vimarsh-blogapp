@@ -1,7 +1,6 @@
-# Vimarsh BlogApp
-
 <div align="center">
-  <img src="public/logo.svg" alt="Vimarsh Blog" width="200"/>
+  <img src="public/logo.svg" alt="Vimarsh Blog" width="125"/>
+  <h1>Vimarsh</h1>
 </div>
 
 A modern, feature-rich blog application built with Next.js, TypeScript, and Tailwind CSS. This application provides a seamless blogging experience with a beautiful UI and powerful features.
@@ -114,7 +113,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Deep Patel - Initial work
 
 ## 🙏 Acknowledgments
 

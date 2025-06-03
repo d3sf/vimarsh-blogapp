@@ -11,9 +11,6 @@ module.exports = {
   ],
   theme: {
   	extend: {
-  		fontFamily: {
-  			satoshi: ['Satoshi', 'sans-serif'],
-  		},
   		colors: {
   			customPink: '#db0042',
   			background: 'hsl(var(--background))',
