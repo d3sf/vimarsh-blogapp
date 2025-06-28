@@ -15,13 +15,18 @@ const ThemeToggle = () => {
 
   if (!mounted) return null;
 
+  // Get the effective theme (considering system preference)
+  const effectiveTheme = theme === "system" 
+    ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+    : theme;
+
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(effectiveTheme === "dark" ? "light" : "dark")}
       className="flex items-center justify-center rounded-full p-2 transition-colors "
-      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+      aria-label={`Switch to ${effectiveTheme === "dark" ? "light" : "dark"} theme`}
     >
-      {theme === "dark" ? (
+      {effectiveTheme === "dark" ? (
         <SunIcon className="h-5 w-5 text-gray-200" />
       ) : (
         <MoonIcon className="h-5 w-5 text-gray-700" />
